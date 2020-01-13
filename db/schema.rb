@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 9) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
-    t.integer "actor_id"
     t.integer "show_id"
   end
 

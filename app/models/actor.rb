@@ -11,7 +11,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     #lists all characters the actor has alongside the show that the character is in. 
     characters.collect do |char|
-      "#{char.name} #{char.show.name}"
+      "#{char.name} - #{char.show.name}"
     end
   end
   
